@@ -1,0 +1,21 @@
+given_number = int(input("Enter a psoitive integer number:  "))
+if type(given_number) == float or type(given_number) == str or given_number < 0:
+    print("It is an invalid entry. Don't use non-numeric, float, or negative values!")
+
+Sum = 0
+Times = 0
+           
+Temp = given_number
+while Temp > 0:
+           Times = Times + 1
+           Temp = Temp // 10
+
+Temp = given_number
+while Temp > 0:
+           Reminder = Temp % 10
+           Sum = Sum + (Reminder ** Times)
+           Temp //= 10
+if given_number == sum:
+           print(f"{given_number} is Armstrong Number")
+else:
+           print(f"{given_number} is not Armstrong Number")
