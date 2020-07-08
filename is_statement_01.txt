@@ -1,0 +1,11 @@
+name = "Sait"
+
+entered_name = input("Enter your name :")
+
+if entered_name.title() == name:
+
+    print(f"Hello, {entered_name}! The password is : W@12")
+
+else:
+
+    print(f"Hello, {entered_name}! See you later.")
